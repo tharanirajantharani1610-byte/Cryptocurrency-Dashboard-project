@@ -1,0 +1,949 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d1117;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#161b22;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00d4ff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#00a8cc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    background:rgba(13,17,23,.92);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    color:#00d4ff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+.logo i{
+
+    margin-right:8px;
+
+    color:#f2a900;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#00d4ff;
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 10% 50px;
+
+    background:
+    linear-gradient(rgba(13,17,23,.85),
+    rgba(13,17,23,.92)),
+    url("https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero-text{
+
+    max-width:800px;
+
+}
+
+.hero-text h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    line-height:1.2;
+
+}
+
+.hero-text p{
+
+    color:#d6d6d6;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+
+    background:#00d4ff;
+
+    color:#000;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#00a8cc;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,212,255,.35);
+
+}
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+section{
+
+    padding:80px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:40px;
+
+    color:#00d4ff;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#161b22;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    color:#bdbdbd;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:992px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        padding:18px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:44px;
+
+    }
+
+    .hero-text p{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:140px 8% 60px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:36px;
+
+    }
+
+    .hero-text p{
+
+        font-size:16px;
+
+    }
+
+    button{
+
+        width:100%;
+
+        max-width:250px;
+
+    }
+
+    section h2{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo{
+
+        font-size:22px;
+
+    }
+
+    nav ul{
+
+        gap:10px;
+
+    }
+
+    nav ul li a{
+
+        font-size:15px;
+
+    }
+
+    .hero-text h1{
+
+        font-size:28px;
+
+    }
+
+    .hero-text p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+/* ==========================================
+   LIVE PRICES SECTION
+========================================== */
+
+#prices{
+    background:#161b22;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    overflow:hidden;
+    border-radius:12px;
+    background:#1f2937;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+table thead{
+    background:#00d4ff;
+    color:#000;
+}
+
+table th{
+    padding:18px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+}
+
+table td{
+    padding:18px;
+    text-align:center;
+    color:#ffffff;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+table tbody tr{
+    transition:.3s;
+}
+
+table tbody tr:hover{
+    background:#273549;
+    transform:scale(1.01);
+}
+
+table tbody tr:last-child td{
+    border-bottom:none;
+}
+
+/* ==========================================
+   PRICE COLORS
+========================================== */
+
+.price-up{
+    color:#00ff88;
+    font-weight:600;
+}
+
+.price-down{
+    color:#ff4d4d;
+    font-weight:600;
+}
+
+/* ==========================================
+   CHART SECTION
+========================================== */
+
+#chart{
+    background:#0d1117;
+}
+
+#chart h2{
+    margin-bottom:40px;
+}
+
+#priceChart{
+    width:100%;
+    max-width:1000px;
+    height:450px;
+    margin:auto;
+    display:block;
+    background:#161b22;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 12px 30px rgba(0,0,0,.4);
+}
+
+/* ==========================================
+   MARKET TRENDS
+========================================== */
+
+#market{
+    background:#161b22;
+}
+
+.market-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+
+}
+
+.card{
+
+    background:#1f2937;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,212,255,.25);
+
+}
+
+.card h3{
+
+    text-align:center;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+
+}
+
+.card ul{
+
+    list-style:none;
+
+}
+
+.card ul li{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    font-size:17px;
+
+}
+
+.card ul li:last-child{
+
+    border-bottom:none;
+
+}
+
+.card ul li span{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   TREND COLOURS
+========================================== */
+
+.gain{
+    color:#00ff88;
+}
+
+.loss{
+    color:#ff4d4d;
+}
+
+.neutral{
+    color:#ffd43b;
+}
+
+/* ==========================================
+   CARD ICONS
+========================================== */
+
+.card i{
+
+    margin-right:8px;
+
+    color:#00d4ff;
+
+}
+
+/* ==========================================
+   RESPONSIVE TABLE
+========================================== */
+
+@media(max-width:900px){
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE CHART
+========================================== */
+
+@media(max-width:768px){
+
+    #priceChart{
+
+        height:320px;
+
+        padding:15px;
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE MARKET CARDS
+========================================== */
+
+@media(max-width:768px){
+
+    .market-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card{
+
+        padding:22px;
+
+    }
+
+    .card h3{
+
+        font-size:22px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    table th,
+    table td{
+
+        padding:12px;
+        font-size:14px;
+
+    }
+
+    .card{
+
+        padding:18px;
+
+    }
+
+    .card ul li{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+/* ==========================================
+   WATCHLIST SECTION
+========================================== */
+
+#watchlist{
+    background:#0d1117;
+}
+
+#watchlist input{
+    width:300px;
+    max-width:100%;
+    padding:12px 15px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+    margin-right:10px;
+    margin-bottom:20px;
+    background:#1f2937;
+    color:#fff;
+}
+
+#watchlist button{
+    margin-bottom:20px;
+}
+
+#watchlistItems{
+    list-style:none;
+    margin-top:20px;
+}
+
+#watchlistItems li{
+    background:#1f2937;
+    padding:15px 20px;
+    margin:12px 0;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:.3s;
+}
+
+#watchlistItems li:hover{
+    transform:translateX(8px);
+    background:#273549;
+}
+
+#watchlistItems button{
+    background:#ff4d4d;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:6px;
+}
+
+/* ==========================================
+   NEWS SECTION
+========================================== */
+
+#news{
+    background:#161b22;
+}
+
+#newsContainer{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.news-card{
+    background:#1f2937;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.news-card:hover{
+    transform:translateY(-8px);
+}
+
+.news-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:20px;
+}
+
+.news-content h3{
+    margin-bottom:15px;
+    color:#00d4ff;
+}
+
+.news-content p{
+    color:#ccc;
+    line-height:1.6;
+}
+
+.news-content a{
+    display:inline-block;
+    margin-top:15px;
+    color:#00d4ff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ==========================================
+   PORTFOLIO SECTION
+========================================== */
+
+#portfolio{
+    background:#0d1117;
+}
+
+.portfolio-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.portfolio-box input{
+    flex:1;
+    min-width:180px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#1f2937;
+    color:#fff;
+    outline:none;
+}
+
+.portfolio-box button{
+    min-width:180px;
+}
+
+/* ==========================================
+   PORTFOLIO TABLE
+========================================== */
+
+#portfolio table{
+    margin-top:25px;
+}
+
+.profit{
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.loss{
+    color:#ff4d4d;
+    font-weight:bold;
+}
+
+/* ==========================================
+   INPUT PLACEHOLDER
+========================================== */
+
+input::placeholder{
+    color:#aaa;
+}
+
+/* ==========================================
+   FADE ANIMATION
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+section{
+    animation:fadeIn .8s ease;
+}
+
+/* ==========================================
+   FLOAT ANIMATION
+========================================== */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.hero button{
+    animation:float 3s infinite;
+}
+
+/* ==========================================
+   GLOW EFFECT
+========================================== */
+
+.card:hover,
+.news-card:hover,
+table:hover{
+    box-shadow:0 0 25px rgba(0,212,255,.35);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:992px){
+
+    .portfolio-box{
+        flex-direction:column;
+    }
+
+    #watchlist input{
+        width:100%;
+        margin-right:0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #newsContainer{
+        grid-template-columns:1fr;
+    }
+
+    .news-card img{
+        height:180px;
+    }
+
+    .portfolio-box input,
+    .portfolio-box button{
+        width:100%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .news-content h3{
+        font-size:18px;
+    }
+
+    .news-content p{
+        font-size:14px;
+    }
+
+    #watchlistItems li{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    #watchlistItems button{
+        width:100%;
+    }
+
+}

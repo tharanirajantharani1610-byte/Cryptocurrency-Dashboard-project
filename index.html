@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
+
+    <div class="logo">
+        <i class="fa-brands fa-bitcoin"></i>
+        Crypto Dashboard
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#prices">Live Prices</a></li>
+
+            <li><a href="#chart">Charts</a></li>
+
+            <li><a href="#market">Market</a></li>
+
+            <li><a href="#watchlist">Watchlist</a></li>
+
+            <li><a href="#news">News</a></li>
+
+            <li><a href="#portfolio">Portfolio</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <h1>Track Cryptocurrency in Real Time</h1>
+
+        <p>
+
+            Monitor live prices, interactive charts,
+            latest news, market trends and manage
+            your crypto portfolio.
+
+        </p>
+
+        <button>Explore Market</button>
+
+    </div>
+
+</section>
+
+<!-- ================= LIVE PRICES ================= -->
+
+<section id="prices">
+
+    <h2>Live Cryptocurrency Prices</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Coin</th>
+
+                <th>Price</th>
+
+                <th>24H</th>
+
+                <th>Market Cap</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="cryptoTable">
+
+            <!-- JavaScript -->
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= INTERACTIVE CHART ================= -->
+
+<section id="chart">
+
+    <h2>Interactive Price Chart</h2>
+
+    <canvas id="priceChart"></canvas>
+
+</section>
+
+<!-- ================= MARKET TRENDS ================= -->
+
+<section id="market">
+
+    <h2>Market Trends</h2>
+
+    <div class="market-container">
+
+        <div class="card">
+
+            <h3>Top Gainers</h3>
+
+            <ul id="gainers"></ul>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Top Losers</h3>
+
+            <ul id="losers"></ul>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Trending Coins</h3>
+
+            <ul id="trending"></ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WATCHLIST ================= -->
+
+<section id="watchlist">
+
+    <h2>My Watchlist</h2>
+
+    <input
+        type="text"
+        id="coinInput"
+        placeholder="Enter Coin Name">
+
+    <button onclick="addWatchlist()">
+
+        Add Coin
+
+    </button>
+
+    <ul id="watchlistItems"></ul>
+
+</section>
+
+<!-- ================= NEWS ================= -->
+
+<section id="news">
+
+    <h2>Latest Crypto News</h2>
+
+    <div id="newsContainer">
+
+    </div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="portfolio">
+
+    <h2>Portfolio Tracker</h2>
+
+    <div class="portfolio-box">
+
+        <input
+            type="text"
+            id="coinName"
+            placeholder="Coin Name">
+
+        <input
+            type="number"
+            id="coinAmount"
+            placeholder="Amount">
+
+        <input
+            type="number"
+            id="buyPrice"
+            placeholder="Buy Price">
+
+        <button onclick="addPortfolio()">
+
+            Add Portfolio
+
+        </button>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Coin</th>
+
+                <th>Amount</th>
+
+                <th>Buy Price</th>
+
+                <th>Current Price</th>
+
+                <th>Profit/Loss</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="portfolioTable">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Crypto Dashboard
+
+        | HTML | CSS | JavaScript
+
+    </p>
+
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
